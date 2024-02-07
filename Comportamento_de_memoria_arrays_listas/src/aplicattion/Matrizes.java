@@ -32,6 +32,16 @@ public class Matrizes {
 		}
 		System.out.println ("Negatives numbers: %d" + negatives);
 		
+		int positives = 0;
+		for(int i = 0; i <matriz.length; i++) {
+			for (int y = 0; y < matriz[i].length; y++) {
+				if(matriz[i][y] > 0) {
+					positives++;
+				}
+			}
+		}
+		System.out.println("Positive numbers: " + positives);
+		
 		sc.close();
 	}
 }
